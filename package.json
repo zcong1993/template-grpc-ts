@@ -1,0 +1,23 @@
+{
+  "name": "sao-template-grpc-ts",
+  "version": "0.0.0",
+  "description": "grpc template for ts",
+  "repository": {
+    "url": "zcong1993/sao-template-grpc-ts",
+    "type": "git"
+  },
+  "author": "zcong1993 <1005997919@qq.com> (github.com/zcong1993)",
+  "license": "MIT",
+  "files": [
+    "saofile.js",
+    "template"
+  ],
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "sao": "^1.0.0"
+  }
+}
