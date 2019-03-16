@@ -10,7 +10,7 @@ OUT_DIR="./src/generated"
 
 mkdir -p $OUT_DIR
 
-rm -rf "OUT_DIR/*"
+rm -rf ${OUT_DIR}/*
 
 "${PROJECT_BIN}/grpc_tools_node_protoc" \
 --js_out=import_style=commonjs,binary:${OUT_DIR} \
