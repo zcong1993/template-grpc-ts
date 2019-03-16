@@ -3,7 +3,7 @@ import { EchoServiceClient } from './generated/hello_grpc_pb'
 import { Message } from './generated/hello_pb'
 
 const client = new EchoServiceClient(
-  'localhost:1234',
+  '0.0.0.0:1234',
   grpc.credentials.createInsecure()
 )
 

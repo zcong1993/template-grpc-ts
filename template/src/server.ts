@@ -18,10 +18,10 @@ class EchoService implements IEchoServiceServer {
 const startServer = () => {
   const server = new grpc.Server()
   server.addService(EchoServiceService, new EchoService())
-  server.bind('127.0.0.1:1234', grpc.ServerCredentials.createInsecure())
+  server.bind('0.0.0.0:1234', grpc.ServerCredentials.createInsecure())
   server.start()
 
-  console.log('Server started, listening: 127.0.0.1:1234')
+  console.log('Server started, listening: 0.0.0.0:1234')
 }
 
 startServer()
