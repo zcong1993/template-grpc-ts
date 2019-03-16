@@ -1,3 +1,5 @@
+const spawn = require('cross-spawn')
+
 module.exports = {
   prompts() {
     return [
@@ -48,6 +50,10 @@ module.exports = {
     }
   ],
   async completed() {
+    spawn.sync('chmod', ['+x', './generate.sh', './build.sh'], {
+      stdio: 'ignore',
+      cwd: this.outDir
+    })
     this.gitInit()
     this.showProjectTips()
   }
