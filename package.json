@@ -19,7 +19,7 @@
     "cross-spawn": "^6.0.5"
   },
   "devDependencies": {
-    "ava": "^1.0.0",
+    "ava": "^2.0.0",
     "sao": "^1.0.0"
   }
 }
