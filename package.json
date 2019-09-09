@@ -16,7 +16,7 @@
     "test": "ava"
   },
   "dependencies": {
-    "cross-spawn": "^6.0.5"
+    "cross-spawn": "^7.0.0"
   },
   "devDependencies": {
     "ava": "^2.0.0",
